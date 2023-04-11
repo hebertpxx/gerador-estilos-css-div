@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Gerador de Estilos CSS para DIV</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Estilos CSS para DIV</h1>
+        <label for="display">Exibição (display)</label>
+        <select name="display" id="display">
+            <option value="block" selected>Bloco</option>
+            <option value="inline-block">Bloco Embutido (inline-block)</option>
+            <option value="flex">Flexionar (flex)</option>
+            <option value="none">Nada</option>
+        </select>
+        <label for="margin">Altura (em px)</label>
+        <input type="number" name="height" id="height" min="0" value="100">
+        <label for="margin">Largura (em px)</label>
+        <input type="number" name="width" id="width" min="0" value="100">
+        <label for="margin">Margem (margin em px)</label>
+        <input type="number" name="margin" id="margin" min="0" value="0">
+        <label for="padding">Acolchoamento (padding em px)</label>
+        <input type="number" name="padding" id="padding" min="0" value="0">
+        <label for="color">Cor da Fonte</label>
+        <input type="color" name="color" id="color" value="#FFFFFF">
+        <label for="background-color">Cor de Fundo</label>
+        <input type="color" name="background-color" id="background-color">
+        <button type="button" id="btn-generate">Gerar</button>
+    </div>
+    <div class="generated-div-container"></div>
+    <div class="cssStyleContainer">
+        <h2>Código CSS Gerado</h2>
+        <div class="cssStyle"></div>
+    </div>
+</body>
+</html>
